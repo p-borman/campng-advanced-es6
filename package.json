@@ -40,7 +40,8 @@
     "underscore": "*",
     "webpack": "^1.9.5",
     "webpack-stream": "^2.0.0",
-    "yargs": "^3.9.0"
+    "yargs": "^3.9.0",
+    "body-parser":"^1.14.1"
   },
   "scripts": {
     "test": "karma start"
