@@ -5,7 +5,12 @@ class CandidateService {
 
   query() {
     return this.http.get("/candidates").then( (response) => {
-      console.log("in the service promise");
+      return response.data;
+    });
+  }
+
+  get(id) {
+    return this.http.get("/candidate/"+id).then( (response) => {
       return response.data;
     });
   }
