@@ -11,3 +11,5 @@ client/*.woff2
 client/*.svg
 client/*.ttf
 client/*.eot
+.iml
+.idea/*

@@ -5,7 +5,19 @@ class Calculator {
   }
 
   add() {
-    return 0;
+    return this.num1 + this.num2;
+  }
+
+  subtract() {
+    return this.num1 - this.num2;
+  }
+
+  multiply() {
+    return this.num1 * this.num2;
+  }
+
+  divide() {
+    return this.num1 / this.num2;
   }
 }
 
