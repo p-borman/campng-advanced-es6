@@ -1,0 +1,8 @@
+<div class="panel panel-default" ng-show="vm.text">
+  <div class="page-header">
+    <h3>{{vm.headerText}}</h3>
+  </div>
+  <div class="panel-body">
+    <div ng-bind-html="vm.text|markdown"></div>
+  </div>
+</div>

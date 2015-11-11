@@ -3,5 +3,13 @@
     <label for="name">Name</label>
     <input type="text" class="form-control" id="name" placeholder="Enter Name" ng-model="vm.candidate.name">
   </div>
+  <div class="form-group">
+    <label for="name">Email</label>
+    <input type="text" class="form-control" id="email" placeholder="Enter Name" ng-model="vm.candidate.email">
+  </div>
+  <div class="form-group">
+    <label for="name">Resume</label>
+    <mark-down text="vm.candidate.resume"></mark-down>
+  </div>
   <button type="submit" class="btn btn-default" ng-click="vm.save()">Save</button>
 </form>

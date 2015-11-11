@@ -1,5 +1,9 @@
 <dl>
   <dt>Name:</dt>
   <dd>{{vm.candidate.name}}</dd>
+  <dt>email:</dt>
+  <dd>{{vm.candidate.email}}</dd>
+  <dt>Resume:</dt>
+  <mark-down-preview text="vm.candidate.resume" header-text="Resume"></mark-down-preview>
 </dl>
 <a ui-sref="editCandidate({id: vm.candidate.id})">Edit</a>
