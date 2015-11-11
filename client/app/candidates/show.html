@@ -1,5 +1,6 @@
 <dl>
+  <div ng-bind-html="'Foo' | hello:'Bar'"></div>
   <dt>Name:</dt>
   <dd>{{vm.candidate.name}}</dd>
+  <a ui-sref="editCandidate({id: vm.candidate.id})">Edit</a>
 </dl>
-<a ui-sref="editCandidate({id: vm.candidate.id})">Edit</a>
