@@ -41,4 +41,15 @@ describe('CandidateService', () => {
     httpBackend.flush();
   });
 
+  it("should update candidates", function() {
+    let candidate = {id: 1, name: "Bob"};
+    let retrievedCandidate = {};
+    httpBackend.expectPOST(`/candidates/${candidate.id}`, JSON.stringify(candidate)).respond({name: "Bob", id: 1});
+    candidateService.update(candidate).then( (candidate) => {
+      retrievedCandidate = candidate;
+      expect(retrievedCandidate.id).to.equal(1);
+    });
+    httpBackend.flush();
+  });
+
 });
