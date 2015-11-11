@@ -28,8 +28,11 @@ describe('EditCandidateController', () => {
   });
 
   it("updates the candidate", () => {
+    editCandidateController.candidate = tom; //update the candidate so we are not updating to what the server already knows
+
     editCandidateController.update(candidate);
-    expect(updatePromise).to.have.been.calledWith(editCandidateController.candidate);
+
+    expect(updatePromise).to.have.been.calledWith(tom);
     expect(getPromise).to.have.been.calledWith(id);
     expect(stateTransitionSpy).to.have.been.calledWith("showCandidate", {id: id});
   });
