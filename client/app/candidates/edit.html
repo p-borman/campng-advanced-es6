@@ -4,6 +4,10 @@
     <input type="text" class="form-control" id="name" placeholder="Enter Name" ng-model="vm.candidate.name">
   </div>
   <div class="form-group">
+    <label for="name">Rating</label>
+    <raty rating="vm.candidate.rating"></raty>
+  </div>
+  <div class="form-group">
     <label for="name">Resume</label>
     <div markdown-editor text="vm.candidate.resume"></div>
   </div>

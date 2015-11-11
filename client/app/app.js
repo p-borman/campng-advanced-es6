@@ -11,7 +11,7 @@ import "bootstrap-webpack";
 import 'normalize.css';
 
 jQuery( () => {
-  jQuery(".rating").raty({path: "/images"});
+  jQuery(".rating").raty({path: "/images",click: function(score, event) { window.alert(score); }});
 });
 
 console.log(markdown.toHTML("**foo**"));
